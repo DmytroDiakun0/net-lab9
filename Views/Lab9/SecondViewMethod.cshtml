@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "SecondViewMethod";
+}
+
+@model List<string>
+
+<table class="table" style="width:20%">
+    <thead>
+        <tr>
+            <th class="text-center">Назва</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vegetable in Model)
+        {
+            <tr class="text-center">
+                <td>@vegetable</td>
+            </tr>
+        }
+    </tbody>
+</table>
